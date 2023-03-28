@@ -1,0 +1,52 @@
+h1{
+    color: white;
+    text-align: center;
+    margin: 10px 0;
+}
+h1 span{
+    color: var(--green);
+}
+#projects-container{
+    margin: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+}
+#projects-container .project-card{
+    width: 20%;
+    height: 40%;
+}
+.project-card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.project-card img:hover{
+    transform: scale(0.9);
+}
+.project-card p{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Tablets Screen */
+
+@media screen and (max-width:991px){
+    #projects-container .project-card{
+        width: 40%;
+    }
+}
+
+/* mobile Screen */
+
+@media screen and (max-width:767px){
+    #projects-container{
+        justify-content: center;
+    }
+    #projects-container .project-card{
+        width: 80%;
+    }
+}
